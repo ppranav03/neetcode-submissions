@@ -10,7 +10,7 @@ class Solution:
             
             for i in range(idx, len(nums)):
                 if remaining < nums[i]:
-                    break
+                    return
 
                 curr.append(nums[i])
                 backtrack(remaining-nums[i], curr, i)
